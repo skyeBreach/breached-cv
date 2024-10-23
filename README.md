@@ -11,6 +11,15 @@
 
 Whilst this repository is free to use, we do ask that the user's of the repo properly attribute it so others can easily find and use it!
 
+## Examples
+
+<TODO Something about example data being false>
+All data and information provided in the example's are purely example data, and do not reflect mine or others CV. Whilst some locations and urls may be real, the people associated with them are not.
+
+The only data that is accurate are the social links, as these link directly back to my socials.
+
+If whilst generating this data i have accidentally included a real person, please open an issue and this will be fixed as soon as possible. 
+
 ## Installation
 
 ## Configuration
