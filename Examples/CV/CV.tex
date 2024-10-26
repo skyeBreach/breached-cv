@@ -1,0 +1,134 @@
+%----------------------------------------------------------------------------------------------------------------------%
+%	Document Configuration
+%----------------------------------------------------------------------------------------------------------------------%
+%BEGIN_FOLD
+
+	% Define document class to be the custom "Breached CV" class, to include the preamble
+	\documentclass[10pt, a4paper, cv, draft]{breached-cv} 
+
+%END_FOLD
+%----------------------------------------------------------------------------------------------------------------------%
+%	Curriculum Vitae Personal Data Configuration 
+%----------------------------------------------------------------------------------------------------------------------%
+%BEGIN_FOLD
+
+	%----------------------------------------------------------------------------------------------------------------------%
+	%	Basic Information
+	%----------------------------------------------------------------------------------------------------------------------%
+	%BEGIN_FOLD
+	
+		% [Required] Full Name
+		% Defines the job seekers full name 
+		%    Usage: \name{<firstname>}{<lastname>}
+		\name{Samantha}{Goldbloom}%
+		
+		% [Optional] Personal Title
+		% Defines the job seekers title, e.g. Mx, Miss, Mr, Dr, etc
+		%    Usage: \title{<title>}
+		\personalTitle{Miss}%
+		
+		% [Optional] Date of Birth
+		% Defines the job seekers date of birth
+		%    Usage: \dateOfBirth{<day>}{<month>}{<year>}
+		\dateOfBirth{29}{02}{2004}%
+		
+		% [Optional] Address
+		% Defines the job seekers address objects
+		%    Usage: \address{<Street Address>}{<City/Town>}{<Post Code>}
+		\address{62 Grove Road}{Newcastle Upon Tyne}{NE98 3RH}%
+	
+	%END_FOLD
+	%----------------------------------------------------------------------------------------------------------------------%
+	%	Contact Information
+	%----------------------------------------------------------------------------------------------------------------------%
+	%BEGIN_FOLD
+	
+		% [Required] Mobile Phone Number
+		% Defines the mobile phone number and the telephone URI for the job seeker, this number should be contactable
+		%    Usage: \mobileNumber{<mobile number>}
+		\mobileNumber{(+44) 785552 6594}%
+		
+		% [Optional] Personal Email
+		% Defines the main personal email for the job seeker, this email should be contactable
+		%    Usage: \personalEmail{<email address>}
+		\personalEmail{samanthagoldbloom@example.com}%
+		
+		% [Optional] Work Email
+		% Defines the main work or business email for the job seeker, this email should be contactable
+		%    Usage: \workEmail{<email address>}
+		\workEmail{samanthagoldbloomwork@example.com}%
+	
+	%END_FOLD
+	%----------------------------------------------------------------------------------------------------------------------%
+	%	Job Information
+	%----------------------------------------------------------------------------------------------------------------------%
+	%BEGIN_FOLD
+	
+		% [Optional] Job Position
+		% Defines the job seekers, current or intended job position
+		% 	Usage: \position{<position>}
+		\position{Software Engineer{\enskip\cdotp\enskip}Gameplay Programmer}%
+	
+	%END_FOLD
+	%----------------------------------------------------------------------------------------------------------------------%
+	%	Social Media and Internet Information
+	%----------------------------------------------------------------------------------------------------------------------%
+	%BEGIN_FOLD
+	
+		% [Optional] Url to homepage and/or a portfolio page
+		% Defines the job seekers internet home page
+		% 	Usage: \homepage{<url>}
+		\homepage{www.skyeBreach.com}%
+		
+		% [Optional] GitHub Username
+		% Defines the job seekers GitHub username, this is used to display a hyperlink to the GitHub profile
+		% 	Usage: \github{<GitHub Username>}
+		\gitHub{skyeBreach}%
+		
+		% [Optional] GitLab Username
+		% Defines the job seekers GitLab username, this is used to display a hyperlink to the GitLab profile
+		% 	Usage: \gitlab{<GitLab Username>}
+		\gitLab{skyeBreachBusiness}%
+		
+		% [Optional] LinkedIn Username
+		% Defines the job seekers LinkedIn username, this is used to display a hyperlink to the LinkedIn profile
+		% 	Usage: \linkedin{<LinkedIn Username>}
+		\linkedIn{skyeBreach}%
+	
+	%END_FOLD
+	%----------------------------------------------------------------------------------------------------------------------%
+
+%END_FOLD
+%----------------------------------------------------------------------------------------------------------------------%
+%	Post Data Entry Configuration
+%----------------------------------------------------------------------------------------------------------------------%
+%BEGIN_FOLD
+
+	% Used to set up the metadata for the PDF based on the above job seeker data. 
+	% This must be run after the data entry is complete
+	\pdfMetaSetup%
+
+%END_FOLD
+%----------------------------------------------------------------------------------------------------------------------%
+%	Main Document
+%----------------------------------------------------------------------------------------------------------------------%
+%BEGIN_FOLD
+
+	% Note: The header for this class is injected in the .cls via the `\AtBeginDocument` hook
+ 	\begin{document}%
+		\input{sections/education.tex}%
+		\cvHRule%
+		\input{sections/employmentHistory.tex}%
+		\cvHRule%
+		\input{sections/volunteering.tex}%
+		\cvHRule%
+		\input{sections/skills.tex}%
+		\cvHRule%
+		\newpage%
+		\cvHRule%
+		\input{sections/references.tex}%
+		\cvHRule%
+	\end{document}%
+
+%END_FOLD
+%----------------------------------------------------------------------------------------------------------------------%

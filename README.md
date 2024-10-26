@@ -7,6 +7,10 @@
     <hr/>
 </div>
 
+## Notice
+
+This repository is currently not in a finished or working state. We are actively working to resolve the issues it has, and hope that it will be functional soon!
+
 ## About Breached-CV
 
 Whilst this repository is free to use, we do ask that the user's of the repo properly attribute it so others can easily find and use it!
